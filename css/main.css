@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* layout */
+    --mobile: 375px;
+    --desktop: 1440px;
+  
+    /* colors */
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+    --neutral-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+  
+    /* typography */
+    --font-size: 15px;
+    --font-size-small-title: calc(var(--font-size) * (7 / 5));
+    --font-size-title: calc(var(--font-size) * (5 / 3));
+    --font-family: 'Poppins', sans-serif;
+    --font-weight-extra-light: 200;
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 600;
+  }

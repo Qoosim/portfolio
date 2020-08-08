@@ -37,12 +37,21 @@ body {
     color: var(--primary-blue);
 }
 
+.top {
+    position: fixed;
+    background: transparent;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+
 .navigate {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 30px 80px;
   background: transparent;
+
 }
 
 .nav-right {
@@ -65,10 +74,11 @@ body {
 .intro-container {
     width: 100%;
     position: relative;
-    height: 700px;
+    height: 850px;
     background: #fff;
     border-bottom-left-radius: 200px;
     margin-bottom: 100px;
+    padding-top: 100px;
 }
 
 .bar-top-left {
@@ -168,16 +178,16 @@ body {
 .feeling {
     letter-spacing: 3px;
     /* font-size: 360px; */
-    font-family: var(--font-family-pop);
+    font-family: var(--font-family-robo);
     font-weight: bold;
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .feeling {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .text-intro {
@@ -371,10 +381,78 @@ body {
     color: #fff;
 }
 
+.about {
+    background: #fff;
+    height: auto;
+    border-top-right-radius: 5%;
+}
 
+.about-info {
+    padding-top: 130px;
+}
 
+.about-self {
+    font-family: var(--font-family-pop);
+    font-weight: bold;
+}
 
+.about-text {
+    font-size: 16px;
+    font-family: var(--font-family-pop);
+    color: #344563;
+}
 
+.resume-div {
+    margin-top: 50px;
+}
 
+.resume {
+    font-size: 17px;
+    font-family: var(--font-family-pop);
+    padding: 10px 17px;
+    border: 1px solid #396DF2;;
+    border-radius: 10px;
+    background: transparent;
+    color: #396DF2;
+}
 
+.resume:hover {
+    text-decoration: none;
+}
 
+.tech {
+    margin-bottom: 25px;
+}
+
+.technology {
+    border-bottom: 1px solid #ddd;
+}
+
+.tech-list {
+    display: flex;
+    list-style: none;
+    background: none;
+    padding: 0 0;
+
+}
+
+.list {
+    color: #808080;
+    padding-bottom: 25px;
+}
+
+.list:not(:first-child) {
+    margin-left: 20px;
+}
+
+.contact-me {
+    height: 600px;
+    margin-top: 150px;
+    background: var(--primary-blue);
+    border-top-left-radius: 150px;
+}
+
+.test {
+    height: 300px;
+    background: red;
+}

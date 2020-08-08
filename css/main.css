@@ -1,6 +1,6 @@
 *,
-*::before,
-*::after {
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,9 +18,6 @@
     --grey-light: #ebebff;
 
     /* typography */
-    --font-size: 15px;
-    --font-size-small-title: calc(var(--font-size) * (7 / 5));
-    --font-size-title: calc(var(--font-size) * (5 / 3));
     --font-family-pop: 'Poppins', sans-serif;
     --font-family-robo: 'Roboto Slab', serif;
     --font-weight-extra-light: 200;
@@ -29,6 +26,8 @@
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     background: #e5e5e5;
 }
 
@@ -63,10 +62,13 @@ body {
     color: #344563;
 }
 
-.container {
+.intro-container {
+    width: 100%;
     position: relative;
     height: 700px;
     background: #fff;
+    border-bottom-left-radius: 200px;
+    margin-bottom: 100px;
 }
 
 .bar-top-left {
@@ -165,7 +167,9 @@ body {
 .name,
 .feeling {
     letter-spacing: 3px;
-    font-family: var(--font-family-robo);
+    /* font-size: 360px; */
+    font-family: var(--font-family-pop);
+    font-weight: bold;
 }
 
 .name {
@@ -268,3 +272,109 @@ body {
     border: 2px solid var(--grey-light);
     border-radius: 50%;
 }
+
+.project-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+.index-page-rails {
+    height: 450px;
+}
+
+.project-img-left {
+    width: 100%;
+    height: 400px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.project-img-right {
+    width: 100%;
+    height: 400px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.p-name {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.project-obj {
+    margin-top: 40px;
+}
+
+.objective {
+    width: 90%;
+    padding: 15px;
+    position: relative;
+    border: 3px dashed var(--grey-light);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.objective::before {
+    content: 'Objective';
+    position: absolute;
+    font-size: 18px;
+    top: -13px;
+    left: calc(50% - 38px);
+    padding: 0 5px;
+    background: #fff;
+}
+
+.tech-used {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.tech-list {
+    background: var(--grey-light);
+    padding: 3px 15px;
+    text-transform: uppercase;
+}
+
+.tech-list:not(:first-child) {
+    margin-left: 20px;
+}
+
+.project-link {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.source-link {
+    display: flex;
+    align-items: center;
+}
+
+.source-link:hover {
+    background: #d1d1d1;
+    color: #fff;
+}
+
+.source-link > a {
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #212121;
+}
+
+.source-link > a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+

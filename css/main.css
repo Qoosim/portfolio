@@ -572,8 +572,15 @@ body {
 
 .lets-connect {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
+}
+
+.my-email {
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
 }
 
 .footer-social {

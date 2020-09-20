@@ -27,8 +27,6 @@ body {
 }
 
 body {
-    /* max-width: 100%; */
-    /* overflow-x: hidden; */
     background: #e5e5e5;
 }
 
@@ -114,18 +112,6 @@ body {
     background: var(--primary-blue);
 }
 
-/* .half-circle-right::before {
-    position: absolute;
-    content: ' ';
-    width: 90%;
-    height: inherit;
-    border: 25px solid var(--primary-blue);
-    border-bottom: none;
-    border-top-left-radius: 175px;
-    border-top-right-radius: 175px;
-    transform: rotate(-30.41deg);
-} */
-
 .bio-info {
     margin-top: 300px;
 }
@@ -169,32 +155,12 @@ body {
     margin-left: 10px;
 }
 
-.half-circle-bellow-social {
-    position: relative;
-    width: 60px;
-    height: 30px;
-    left: -910px; 
-    top: 650px;
-}
-
-.half-circle-bellow-social::before {
-    position: absolute;
-    content: ' ';
-    width: inherit;
-    height: inherit;
-    border: 10px solid var(--grey-light);
-    border-bottom: none;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px;
-    transform: rotate(15.41deg);
-}
-
 .bar-bellow-social {
     position: absolute;
-    width: 170px;
-    height: 30px;
-    left: 770px;
-    top: 630px;
+    width: 12%;
+    height: 3%;
+    left: 30%;
+    top: 80%;
     background: var(--grey-light);
     transform: rotate(20deg);
 }
@@ -203,8 +169,8 @@ body {
     position: absolute;
     width: 42px;
     height: 42px;
-    left: 895px;
-    top: 607px;
+    left: 40%;
+    top: 78%;
     background: var(--primary-blue);
     border-radius: 50%;
 }
@@ -384,7 +350,6 @@ body {
 .contact-me {
     height: auto;
     margin-top: 120px;
-    /* padding-bottom: 33%; */
     background: var(--primary-blue);
     border-top-left-radius: 150px;
     position: relative;
@@ -438,32 +403,22 @@ body {
 
 .bar-bottom-right {
     position: absolute;
-    width: 110px;
-    height: 25px;
-    left: 1140px;
-    top: 130px;
+    width: 10%;
+    height: 3%;
+    right: 3%;
+    top: 15%;
     background: #7f8cff;
     transform: rotate(-23deg);
 }
 
 .half-circle-bottom-right {
-    position: relative;
-    width: 130px;
-    height: 70px;
-    left: 1155px; 
-    top: -498px;
-}
-
-.half-circle-bottom-right::before {
     position: absolute;
-    content: ' ';
-    width: inherit;
-    height: inherit;
-    border: 30px solid #fff;
-    border-bottom: none;
-    border-top-left-radius: 175px;
-    border-top-right-radius: 175px;
-    transform: rotate(-37.41deg);
+    width: 8%;
+    height: 13%;
+    right: 2.8%; 
+    top: 18%;
+    background: #fff;
+    border-radius: 50%;
 }
 
 .circle-towards-center {
@@ -490,10 +445,10 @@ body {
 }
 
 .circle-bottom-right {
-    width: 100px;
-    height: 100px;
-    left: 1100px;
-    top: 420px;
+    width: 7%;
+    height: 11%;
+    left: 80%;
+    top: 56%;
     background: #7f8cff;
 }
 
@@ -531,6 +486,6 @@ body {
     }
 
     .bio-info {
-        margin-top: 50%;
+        margin-top: 40%;
     }
 }

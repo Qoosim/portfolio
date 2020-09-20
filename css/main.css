@@ -143,13 +143,6 @@ body {
     font-size: 2rem;
 }
 
-/* .text-intro {
-    font-size: 20px;
-    font-family: var(--font-family-pop);
-    font-weight: 300;
-    color:  #344563;
-} */
-
 .connect {
     font-size: 18px;
     margin-top: 20px;
@@ -194,17 +187,6 @@ body {
     transform: rotate(15.41deg);
 }
 
-.half-circle-filled-bellow-social {
-    position: absolute;
-    width: 40px;
-    height: 20px;
-    left: 365px;
-    top: 630px;
-    background: var(--primary-blue);
-    border-bottom-left-radius: 200px;
-    border-bottom-right-radius: 200px;
-}
-
 .bar-bellow-social {
     position: absolute;
     width: 170px;
@@ -241,6 +223,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 30px;
     margin-bottom: 100px;
+    padding-bottom: 20px;
 }
 
 .index-page-rails {
@@ -484,7 +467,7 @@ body {
     width: 125px;
     height: 22px;
     left: 90px;
-    top: 400px;
+    top: 70px;
     transform: rotate(30deg);
 }
 
@@ -492,7 +475,7 @@ body {
     width: 50px;
     height: 50px;
     left: 115px;
-    top: 420px;
+    top: 90px;
 }
 
 .circle-bottom-right {

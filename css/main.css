@@ -27,8 +27,8 @@ body {
 }
 
 body {
-    max-width: 100%;
-    overflow-x: hidden;
+    /* max-width: 100%; */
+    /* overflow-x: hidden; */
     background: #e5e5e5;
 }
 
@@ -43,20 +43,20 @@ body {
 
 .bar-top-left {
     position: absolute;
-    width: 109px;
-    height: 20px;
-    left: 34px;
-    top: 150px;
+    width: 9%;
+    height: 2.2%;
+    left: 2%;
+    top: 18%;
     background: var(--grey-light);
     transform: rotate(-46.14deg);
 }
 
 .half-circle-filled {
     position: absolute;
-    width: 80.48px;
-    height: 40.2px;
-    left: 93.2px;
-    top: 170px;
+    width: 6%;
+    height: 4.8%;
+    left: 7%;
+    top: 20%;
     background: var(--primary-blue);
     transform: rotate(14.88deg);
     border-bottom-left-radius: 200px;
@@ -65,30 +65,30 @@ body {
 
 .bar-top-middle {
     position: absolute;
-    width: 56px;
-    height: 10px;
-    left: 646px;
-    top: 225px;
+    width: 4%;
+    height: 1.2%;
+    left: 48.7%;
+    top: 26.53%;
     background: var(--primary-blue);
     transform: rotate(-15deg);
 }
 
 .circle-center {
     position: absolute;
-    width: 23px;
-    height: 23px;
-    left: 665px;
-    top: 235px;
+    width: 2.5%;
+    height: 4%;
+    left: 50%;
+    top: 27.59%;
     background: var(--grey-light);
     border-radius: 50%;
 }
 
 .circle-towards-right {
     position: absolute;
-    width: 39px;
-    height: 39px;
-    left: 970px;
-    top: 125px;
+    width: 2.5%;
+    height: 4%;
+    left: 70%;
+    top: 15%;
     background: #fff;
     border: 2px solid var(--grey-light);
     border-radius: 50%;
@@ -96,33 +96,35 @@ body {
 
 .bar-top-right {
     position: absolute;
-    width: 204px;
-    height: 47px;
-    left: 1115px;
-    top: 150px;
+    width: 15%;
+    height: 5%;
+    right: 2%;
+    top: 18%;
     background: var(--grey-light);
     transform: rotate(-30deg);
 }
 
 .half-circle-right {
-    position: relative;
-    width: 180px;
-    height: 100px;
-    left: 1135px; 
-    top: 195px;
+    position: absolute;
+    width: 8%;
+    height: 12%;
+    right: 3%; 
+    top: 22.1%;
+    border-radius: 50%;
+    background: var(--primary-blue);
 }
 
-.half-circle-right::before {
+/* .half-circle-right::before {
     position: absolute;
     content: ' ';
-    width: inherit;
+    width: 90%;
     height: inherit;
-    border: 35px solid var(--primary-blue);
+    border: 25px solid var(--primary-blue);
     border-bottom: none;
     border-top-left-radius: 175px;
     border-top-right-radius: 175px;
     transform: rotate(-30.41deg);
-}
+} */
 
 .bio-info {
     margin-top: 300px;
@@ -365,6 +367,7 @@ body {
 
 .lang-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -379,15 +382,16 @@ body {
 }
 
 .contact-me {
-    height: 880px;
-    margin-top: 150px;
+    height: auto;
+    margin-top: 120px;
+    /* padding-bottom: 33%; */
     background: var(--primary-blue);
     border-top-left-radius: 150px;
     position: relative;
 }
 
 .contact-area {
-    height: 500px;
+    height: auto;
     margin-top: 150px;
 }
 
@@ -423,6 +427,13 @@ body {
     margin-left: 37%;
     background: #fff;
     border: none;
+}
+
+.lets-connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .bar-bottom-right {
@@ -467,7 +478,7 @@ body {
     width: 125px;
     height: 22px;
     left: 90px;
-    top: 70px;
+    top: 400px;
     transform: rotate(30deg);
 }
 
@@ -475,7 +486,7 @@ body {
     width: 50px;
     height: 50px;
     left: 115px;
-    top: 90px;
+    top: 420px;
 }
 
 .circle-bottom-right {
@@ -487,28 +498,21 @@ body {
 }
 
 .bar-bottom-bottom {
-    width: 60px;
-    height: 10px;
-    left: 350px;
-    top: 710px;
+    width: 4%;
+    height: 1.4%;
+    left: 27%;
+    top: 83%;
     background: #fff;
 }
 
 .half-circle-filled-bottom {
-    width: 42px;
-    height: 21px;
-    left: 377px;
-    top: 728px;
+    width: 3%;
+    height: 2.5%;
+    left: 28%;
+    top: 85.7%;
     background: #7f8cff;
     transform: rotate(25deg);
 
-}
-
-.lets-connect {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
 }
 
 .my-email {
@@ -519,4 +523,14 @@ body {
 
 .footer-social {
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .design {
+        visibility: hidden;
+    }
+
+    .bio-info {
+        margin-top: 50%;
+    }
 }

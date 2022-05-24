@@ -13,7 +13,7 @@ import Contact from './components/contact/Contact';
 function App() {
   return (
     <Router>
-      <div className="w-full h-screen bg-gray-800">
+      <div className="w-full h-full bg-gray-800">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

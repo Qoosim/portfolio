@@ -14,8 +14,7 @@ import { Container } from 'react-bootstrap'
 
 function App() {
   return (
-    <Container style={{height: '100vh'}}>
-      <div className="bg-gray-800" style={{height: '100%'}}>
+    <Container style={{height: '100%', backgroundColor: '#1f2937'}} fluid>
         <Router >
             <Navbar />
             <Routes>
@@ -26,8 +25,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
-      </div>
-      </Container>
+    </Container>
   );
 }
 

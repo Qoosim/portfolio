@@ -6,6 +6,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Home = () => {
 
   return (
+      <Container style={{minHeight: '100vh'}}>
         <Row className="pt-32">
             <Col xs ="auto" lg={6}>
               <h2 className="text-gray-100 text-4xl font-mont font-bold mb-4">Qoosim AbdulGhaniyy</h2>
@@ -34,6 +35,7 @@ const Home = () => {
               </div>
             </Col>
         </Row>
+      </Container>
   )
 }
 

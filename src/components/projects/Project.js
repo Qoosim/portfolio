@@ -4,11 +4,11 @@ import { FaGithub } from "react-icons/fa";
 import { projects } from "../../data";
 
 const Project = () => {
-  const [readMore, setReadMore] = React.useState(false);
+  const [readMore] = React.useState(false);
 
   return (
-    <Container className="mt-5 pb-5">
-      <Row xs={1} md={2} lg={3} className="g-4">
+    <Container style={{backgroundColor: '#1f2937', minHeight: '100vh'}}>
+      <Row xs={1} md={2} lg={3} className="mt-5 py-5 g-4">
         {projects.map((project) => {
           const { id, name, github, live, image, tech, desc } = project;
           return (
@@ -21,14 +21,17 @@ const Project = () => {
                     {readMore ? desc : desc.slice(0, 100)}
                     <button>{readMore ? " Read Less" : " Read More"}</button>
                   </Card.Text>
-                  { tech.map((language, index) => {
-                      console.log(language, index);
-                      return (
-                        <ul className="d-flex justify-content-center">
-                            <li key={index}>{language}</li>
-                        </ul>
-                      )
-                  })}
+                  <Card.Text>
+                    <div className="d-flex">
+                        {tech.map((lang, index) => {
+                            return (
+                                <ul className="pl-0" key={index}>
+                                    <li className="pr-5">{lang}</li>
+                                </ul>
+                            )
+                        })}
+                    </div>
+                  </Card.Text>
                   <Button variant="primary" className="bg-dark">
                     <a href={github} className="text-white">
                       <FaGithub />

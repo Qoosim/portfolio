@@ -1,3 +1,4 @@
+import React from 'react';
 import {                                                                                                    BrowserRouter as Router,
   Routes,
   Route,
@@ -9,21 +10,24 @@ import Project from './components/projects/Project';
 import About from './components/about/About';
 import Skill from './components/skills/Skill';
 import Contact from './components/contact/Contact';
+import { Container } from 'react-bootstrap'
 
 function App() {
   return (
-    <Router>
-      <div className="w-full h-full bg-gray-800">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skill" element={<Skill />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+    <Container style={{height: '100vh'}}>
+      <div className="bg-gray-800" style={{height: '100%'}}>
+        <Router >
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/project" element={<Project />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/skill" element={<Skill />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
       </div>
-    </Router>
+      </Container>
   );
 }
 

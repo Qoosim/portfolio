@@ -6,29 +6,30 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
-
-  const style = {
-    link: {
-      textTransform: "capitalize",
-      textAlign: 'center',
-      fontWeight: 'bold',
-      color: '#BDBDBD',
-    },
-    menu: {
-      color: '#BDBDBD',
-    },
-    headerSpan: {
-      color: '#FFC400',
-    },
-    social: {
-      color: 'white',
-      fontSize: '20px',
+    const [click, setClick] = React.useState(false);
+    
+    const style = {
+        link: {
+        textTransform: "capitalize",
+        textAlign: 'center',
+        fontWeight: 'bold',
+        color: '#BDBDBD',
+        },
+        menu: {
+          color: '#BDBDBD',
+        },
+        headerSpan: {
+          color: '#FFC400',
+        },
+        social: {
+          color: 'white',
+          fontSize: '20px',
+        }
     }
-  }
 
   return (
     <>
-     <Navbar bg="dark" expand="lg">
+     <Navbar bg="dark" expand="lg" fixed="top" expanded={click}>
         <Container>
           <Navbar.Brand
             href="#home"
@@ -36,7 +37,7 @@ const Navigation = () => {
           >
             Qoosim <span style={style.headerSpan}>AbdulGhaniyy</span>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setClick(click ? false : 'click')}>
             <FaBars style={style.menu} />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav" className="text-white">
@@ -49,6 +50,7 @@ const Navigation = () => {
                     to={url}
                     key={id}
                     style={style.link}
+                    onClick={() => setClick(false)}
                   >
                     {text}
                   </Nav.Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import {
   SiJavascript, SiCss3,
   SiRedux, SiTailwindcss,
@@ -12,8 +12,7 @@ import { FaHtml5, FaReact, FaBootstrap, FaGithub } from 'react-icons/fa';
 const About = () => {
 
   return (
-    <Container>
-      <Row xs={1} md={2} className="flex mt-5 g-5">
+      <Row xs={1} md={2} className="flex g-5" style={{paddingTop: '5rem'}}>
         <Col>
           <Card className="" style={{background: '#1F2937'}}>
             <Card.Body>
@@ -25,7 +24,7 @@ const About = () => {
             </Card.Body>
           </Card>
         </Col>
-        <div className="">
+        <Col>
           <div>
             <h3 className="capitalize text-white font-mont">languages</h3>
             <ul className="d-flex space-x-7 list-unstyled">
@@ -80,9 +79,8 @@ const About = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </Col>
       </Row>
-    </Container>
   )
 }
 

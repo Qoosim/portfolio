@@ -8,7 +8,6 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import Project from './components/projects/Project';
 import About from './components/about/About';
-import Skill from './components/skills/Skill';
 import Contact from './components/contact/Contact';
 import { Container } from 'react-bootstrap'
 
@@ -21,7 +20,6 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/project" element={<Project />} />
               <Route path="/about" element={<About />} />
-              <Route path="/skill" element={<Skill />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>

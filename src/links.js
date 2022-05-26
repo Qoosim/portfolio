@@ -1,28 +1,24 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { v4 as uuidv4 } from 'uuid';
 
 export const links = [
   {
-    id: 1,
+    id: uuidv4(),
     text: 'home',
     url: "/"
   },
   {
-    id: 2,
+    id: uuidv4(),
     text: 'about',
     url: "/about"
   },
   {
-    id: 3,
-    text: 'skills',
-    url: "/skill"
-  },
-  {
-    id: 4,
+    id: uuidv4(),
     text: 'portfolio',
     url: "/project"
   },
   {
-    id: 5,
+    id: uuidv4(),
     text: 'contact',
     url: "/contact"
   },
@@ -31,16 +27,17 @@ export const links = [
 
 export const social = [
   {
-    id: 6,
+    id: uuidv4(),
     url: 'https://github.com/Qoosim',
     icon: <FaGithub />
   },
   {
-    id: 7,
+    id: uuidv4(),
     url: 'https://www.linkedin.com/in/qoosim/',
     icon: <FaLinkedinIn /> 
   },
 ];
+
 /**
 export const social = [
   {

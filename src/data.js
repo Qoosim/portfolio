@@ -19,6 +19,16 @@ export const projects = [
   },
   {
     id: uuidv4(),
+    name: 'MealMood',
+    github: 'https://github.com/Qoosim/JavaScript-Group-Capstone',
+    live: 'https://laughing-hodgkin-321112.netlify.app/',
+    image: 'https://github.com/Qoosim/JavaScript-Group-Capstone/blob/dev/src/assets/food_menu.png?raw=true',
+    // tech: [<SiJavascript />, <SiWebpack />, <FaHtml />, <SiCss3 />]
+    tech: ['JavaScript', 'Webpack', 'Html', 'Css'],
+    desc: 'This is a JavaScript capstone project. It is a web application based on an external API. A selected API provides data about different recipes. The webapp has two interfaces. 1. A home page showing a list of items that you can "like." 2. A popup window with more data about an item that you can use to comment on the item.',
+  },
+  {
+    id: uuidv4(),
     name: 'Leaderboard',
     github: 'https://github.com/Qoosim/leaderboard-JS',
     live: 'https://leaderboard-js.netlify.app/',

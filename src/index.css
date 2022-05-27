@@ -6,14 +6,6 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
  * */
-/* html, body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background: #1f2937;
-}
-*/
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

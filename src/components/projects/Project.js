@@ -50,16 +50,14 @@ const Project = () => {
                       </div>
                     </Card.Text>
                     <motion.div whileHover={{ scale: 0.9 }}>
-                      <div>
-                        <Button 
-                          variant="warning"
-                          className="font-mont fw-bold py-1"
-                          style={{width: '100%'}}
-                          onClick={() => openModal(i)}
-                        >
-                          See Project
-                        </Button>
-                      </div>
+                      <Button 
+                        variant="warning"
+                        className="font-mont fw-bold py-1"
+                        style={{width: '100%'}}
+                        onClick={() => openModal(i)}
+                      >
+                        See Project
+                      </Button>
                     </motion.div>
                   </Card.Body>
                 </Card>
@@ -89,34 +87,30 @@ const Project = () => {
           <p className="my-2">{projects[index].desc}</p>
           <ButtonGroup className="w-100">
             <motion.div whileHover={{ scale: 0.9 }}>
-              <div>
-                <Button
-                  as="a"
-                  variant="warning"
-                  className="fw-bold border-dark"
-                  style={{width: '100%'}}
-                  href={projects[index].live}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </Button>
-              </div>
+              <Button
+                as="a"
+                variant="warning"
+                className="fw-bold border-dark"
+                style={{width: '100%'}}
+                href={projects[index].live}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Demo
+              </Button>
             </motion.div>
             <motion.div whileHover={{ scale: 0.9}}>
-              <div>
-                <Button
-                  as="a"
-                  variant="warning"
-                  className="fw-bold border-dark"
-                  style={{width: '100%'}}
-                  href={projects[index].github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code
-                </Button>
-              </div>
+              <Button
+                as="a"
+                variant="warning"
+                className="fw-bold border-dark"
+                style={{width: '100%'}}
+                href={projects[index].github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code
+              </Button>
             </motion.div>
           </ButtonGroup>
         </Modal.Body>

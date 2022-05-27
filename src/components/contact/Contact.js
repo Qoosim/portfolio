@@ -1,16 +1,25 @@
 import React from 'react';
 import { Button, Container, Col, Form, Row } from 'react-bootstrap';
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Contact = () => (
   <Container
-    fluid
     id="contact"
     as="section"
     className="min-vh-100 py-5 d-flex flex-column justify-content-center align-items-center"
   >
     <Row>
-      <h3 className="text-white text-center text-4xl font-source bold text-orange-400 py-4">Contact me</h3>
+      
+      <motion.h3 
+        className="text-4xl font-source bold py-1" style={{color: 'orange'}}
+        initial={{ opacity: 0, x: -500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        Contact me
+      </motion.h3>
       <Col>
         <motion.div
           className="text-center text-md-start text-2xl text-gray-400 font-source font-semibold"
@@ -20,6 +29,17 @@ const Contact = () => (
           viewport={{ once: true }}
         >
           If you have an application you are interested in developing, a feature that you need to build or a project that needs coding. Let's work together to make it happen!.
+        </motion.div>
+        <motion.div 
+          className="d-flex justify-content-center space-x-5 mt-5"
+          initial={{ opacity: 0, x: -500 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <FaGithub className="text-xl text-orange-400 cursor-pointer" />
+          <FaLinkedinIn className="text-xl text-orange-400 cursor-pointer" />
+          <FaTwitter className="text-xl text-orange-400 cursor-pointer" />
         </motion.div>
       </Col>
       <Col >
@@ -52,11 +72,18 @@ const Contact = () => (
               className="mb-4 py-2 border-0 border-bottom"
               required
             />
-            <div className="d-flex justify-content-center">
-              <Button type="submit" size="lg" className="bg-custom1 fw-bold border-0">
-                Get in touch
-              </Button>
-            </div>
+              <motion.button 
+              whileHover={{ scale: 0.9}}
+              >
+                <Button 
+                  variant="warning"
+                  type="submit" 
+                  size="lg" 
+                  className="fw-bold border-0 text-center"
+                >
+                  Get in touch
+                </Button>
+              </motion.button>
           </Form>
         </motion.div>
       </Col>

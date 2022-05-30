@@ -13,17 +13,17 @@ const Contact = () => (
       
       <motion.h3 
         className="text-4xl font-source bold py-1" style={{color: 'orange'}}
-        initial={{ opacity: 0, x: -500 }}
+        initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
         Contact me
       </motion.h3>
-      <Col>
+      <Col md={6}>
         <motion.div
-          className="text-center text-md-start text-2xl text-gray-400 font-source font-semibold"
-          initial={{ opacity: 0, x: -500 }}
+          className="text-xl text-gray-400 font-source font-semibold"
+          initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -31,18 +31,18 @@ const Contact = () => (
           If you have an application you are interested in developing, a feature that you need to build or a project that needs coding. Let's work together to make it happen!.
         </motion.div>
         <motion.div 
-          className="d-flex justify-content-center space-x-5 mt-5"
-          initial={{ opacity: 0, x: -500 }}
+          className="d-flex space-x-5 mt-2 mb-4 lg:mb-0"
+          initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <FaGithub className="text-xl text-orange-400 cursor-pointer" />
-          <FaLinkedinIn className="text-xl text-orange-400 cursor-pointer" />
-          <FaTwitter className="text-xl text-orange-400 cursor-pointer" />
+          <FaGithub className="text-xl text-yellow-500 cursor-pointer" />
+          <FaLinkedinIn className="text-xl text-yellow-500 cursor-pointer" />
+          <FaTwitter className="text-xl text-yellow-500 cursor-pointer" />
         </motion.div>
       </Col>
-      <Col >
+      <Col md={6}>
         <motion.div
           initial={{ opacity: 0, x: 500 }}
           whileInView={{ opacity: 1, x: 0 }}

@@ -2,6 +2,7 @@ import React from 'react';
 import { text } from '../../text';
 import Img from '../../assets/alaje.png';
 import { Col, Container, Row } from 'react-bootstrap';
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
 
@@ -9,7 +10,20 @@ const Home = () => {
       <Container style={{minHeight: '100vh'}}>
         <Row className="pt-32">
             <Col xs ="auto" lg={6}>
-              <h2 className="text-gray-100 text-4xl font-mont font-bold mb-4">Qoosim AbdulGhaniyy</h2>
+              <h2 className="text-gray-100 text-4xl font-mont font-bold mb-4">
+                <Typewriter 
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                    delay: 40,
+                    strings:[
+                      "Qoosim AbdulGhaniyy",
+                      "A front-end developer",
+                      "A tech enthusiast"
+                    ]
+                  }}
+                />
+              </h2>
               <div>
                 {text.map((para, index) => {
                   return (

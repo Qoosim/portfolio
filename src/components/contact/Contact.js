@@ -49,7 +49,7 @@ const Contact = () => (
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <Form action="https://formspree.io/f/meqvpkyg" method="post">
+          <Form action="https://formspree.io/f/myyvzvjo" method="post">
             <Form.Control
               type="text"
               name="name"
